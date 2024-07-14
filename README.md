@@ -13,7 +13,7 @@ Here's a few basic but effective steps & tips to diagnosing & fixing issues with
 ************************************************
 # How to set up your Canbus network 
 
-Theres two ways, firstly follow the Katapult documentation.
+There's two ways, firstly follow the Katapult documentation.
 https://github.com/Arksine/katapult
 
 If however you don't use Katapult &/or want to try to flash in DFU mode with no bootloader you can do that too. It might help remove a layer of complexity if you're having issues. 
