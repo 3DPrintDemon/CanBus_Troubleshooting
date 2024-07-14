@@ -128,7 +128,7 @@ The network should now work - in theory!
 # How to tell which of your Canbus nodes are not functional & are keeping the network `Down`.
 
 
-Your system seems to be set up correctly but your Can network not working, you keep getting can’t connect to MCU’s errors or have communication timeouts during homing….
+Your system seems to be set up correctly but your Can network is not working, you keep getting can’t connect to MCU’s errors or have communication timeouts during homing….
 
 `ERROR: “mcu.error: mcu 'EBBCan’: Unable to connect”`
 
