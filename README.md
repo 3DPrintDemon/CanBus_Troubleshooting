@@ -26,6 +26,8 @@ DO NOT DO THIS IF YOU THINK YOU WILL NOT BE ABLE TO GET KATAPULT BACK - Jump dow
 
 Connect your Canbus node in DFU mode - see node's manual for this step!
 
+###### NOTE: A Canbus `node` is any hardware on the network, your mainboard, your toolhead board, or your Canbus U2C adapter
+
 log in to your SSH terminal....
 
 ```
