@@ -104,7 +104,7 @@ If any unassigned UUID's are found the terminal will report something similar to
 
 `Found canbus_uuid=3754cb7564f3, Application: Klipper`
 
-Copy the UUID shown in YOUR termninal to the correct MCU section in the selected .cfg file for the printer to use.
+Copy the UUID shown in YOUR terminal to the correct MCU section in the selected .cfg file for the printer to use.
 
 
 
