@@ -13,7 +13,7 @@ Here's a few basic but effective steps & tips to diagnosing & fixing issues with
 ************************************************
 # How to set up your Canbus network 
 
-Be sure your network has the correct 120ohm resistor termination. This is vital!!
+Be sure your network has the correct 120ohm resistor termination. This is vital!! This document assumes you have this correctly set. If not, go do that now....
 
 There's two ways, firstly follow the Katapult documentation.
 https://github.com/Arksine/katapult
