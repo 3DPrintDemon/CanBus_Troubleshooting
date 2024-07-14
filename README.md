@@ -11,7 +11,9 @@ Canbus networks are awesome recent additions to modern 3D printers, but they're 
 Here's a few basic but effective steps & tips to diagnosing & fixing issues with your Canbus network.
 
 ************************************************
-# To set up your Canbus network follow the Katapult documentation.
+# How to set up your Canbus network 
+
+Theres two ways, firstly follow the Katapult documentation.
 https://github.com/Arksine/katapult
 
 If however you don't use Katapult &/or want to try to flash in DFU mode with no bootloader you can do that too. It might help remove a layer of complexity if you're having issues. 
