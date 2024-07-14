@@ -1,7 +1,7 @@
 # CanBus_Troubleshooting
 Basic Troubleshooting for 3d Printer Canbus networks
 
-Canbus networks are awesome recent addtions to modern 3D printers, but they're are extrmely complex & finicky things to setup & maintain. They're even more difficult to fault find without advanced knowledge!
+Canbus networks are awesome recent additions to modern 3D printers, but they're are extremely complex & finicky things to setup & maintain. They're even more difficult to fault find without advanced knowledge!
 
 Here's a few basic but effective steps & tips to diagnosing & fixing issues with your Canbus network.
 
