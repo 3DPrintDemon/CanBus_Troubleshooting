@@ -24,7 +24,8 @@ TO FLASH KATAPULT BACK AFTERWARDS YOU WILL NEED TO MANUALLY PUT THE NODE INTO DF
 DO NOT DO THIS IF YOU THINK YOU WILL NOT BE ABLE TO GET KATAPULT BACK - Jump down to the next section!
 
 
-Connect your Canbus node in DFU mode via a USB cable without 24v power connected!! - see node's manual for this step!
+## Connect your Canbus node with a USB cable without 24v power connected & enter DFU mode!! 
+See your node's manual for this step! You will probably need a power over USB Jumper.
 
 ###### NOTE: A Canbus `node` is any hardware on the network, your mainboard, your toolhead board, or your Canbus U2C adapter
 
