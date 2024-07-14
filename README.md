@@ -9,7 +9,7 @@ Here's a few basic but effective steps & tips to diagnosing & fixing issues with
 # To set up your Canbus network follow the Katapult documentation.
 https://github.com/Arksine/katapult
 
-If however you don't use Katapult & want to flash in DFU mode with no bootloader you can do that too. I might help remove a layer of complexity if you're having issues. 
+If however you don't use Katapult & want to flash in DFU mode with no bootloader you can do that too. It might help remove a layer of complexity if you're having issues. 
 
 THIS WILL OVERWRITE ANY KATAPULT BOOTLOADERS!
 TO FLASH KATAPULT BACK AFTERWARDS YOU WILL NEED TO MANUALLY PUT THE NODE INTO DFU MODE AGAIN!
