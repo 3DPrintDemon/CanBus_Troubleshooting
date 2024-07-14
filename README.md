@@ -4,7 +4,7 @@ Basic Troubleshooting for 3d Printer Canbus networks
 
 [<img width="171" alt="kofi_s_tag_dark" src="https://github.com/user-attachments/assets/3b8ae7e8-2130-4b90-8650-941f938ca196">](https://ko-fi.com/3dprintdemon)
 
-I hope this guide will help you cure any Canbus woes you might be having. If you feel is valueable information please conisder supporting my efforts. Don't forget if you like & use this project you can buy me a beer/coffee to say thanks. https://ko-fi.com/3dprintdemon
+I hope this guide will help you cure any Canbus woes you might be having. If you feel this is valueable information please conisder supporting my efforts. Don't forget if you like & use this project you can buy me a beer/coffee to say thanks. https://ko-fi.com/3dprintdemon
 
 Canbus networks are awesome recent additions to modern 3D printers, but they're are extremely complex & finicky things to setup & maintain. They're even more difficult to fault find without advanced knowledge!
 
