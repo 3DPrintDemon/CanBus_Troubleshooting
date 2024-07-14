@@ -125,7 +125,7 @@ The network should now work - in theory!
 
 ************************************************
 
-# How tell which of your Canbus nodes are not functional & are keeping the network `Down`.
+# How to tell which of your Canbus nodes are not functional & are keeping the network `Down`.
 
 
 Your system seems to be set up correctly but your Can network not working, you keep getting can’t connect to MCU’s errors or have communication timeouts during homing….
