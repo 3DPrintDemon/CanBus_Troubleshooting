@@ -44,7 +44,7 @@ cd klipper
 ```
 make menuconfig
 ```
-Set firmware values for your selected node hardware. Paying special attention to set the correct Canbus frequency, the same as in the can0 file above (1000000)
+Set firmware values for your selected node hardware. Paying special attention to set the correct Canbus frequency, the same as in the can0 file shown in the next section below (1000000). Thats very important, if these are mismatched then the network can never work.
 
 Save & Exit
 
