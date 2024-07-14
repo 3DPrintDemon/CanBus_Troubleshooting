@@ -1,5 +1,10 @@
-# CanBus_Troubleshooting
+# CanBus Troubleshooting
 Basic Troubleshooting for 3d Printer Canbus networks
+
+
+[<img width="171" alt="kofi_s_tag_dark" src="https://github.com/user-attachments/assets/3b8ae7e8-2130-4b90-8650-941f938ca196">](https://ko-fi.com/3dprintdemon)
+
+I hope this guide will help you cure any Canbus woes you might be having. If you feel is valueable information please conisder supporting my efforts. Don't forget if you like & use this project you can buy me a beer/coffee to say thanks. https://ko-fi.com/3dprintdemon
 
 Canbus networks are awesome recent additions to modern 3D printers, but they're are extremely complex & finicky things to setup & maintain. They're even more difficult to fault find without advanced knowledge!
 
@@ -9,7 +14,7 @@ Here's a few basic but effective steps & tips to diagnosing & fixing issues with
 # To set up your Canbus network follow the Katapult documentation.
 https://github.com/Arksine/katapult
 
-If however you don't use Katapult & want to flash in DFU mode with no bootloader you can do that too. It might help remove a layer of complexity if you're having issues. 
+If however you don't use Katapult &/or want to try to flash in DFU mode with no bootloader you can do that too. It might help remove a layer of complexity if you're having issues. 
 
 THIS WILL OVERWRITE ANY KATAPULT BOOTLOADERS!
 TO FLASH KATAPULT BACK AFTERWARDS YOU WILL NEED TO MANUALLY PUT THE NODE INTO DFU MODE AGAIN!
@@ -182,6 +187,14 @@ This will show the health of your network.
 
 NOTE: BTT U2C units might require the BTT fork of Candlelight to work correctly if you’re having issues you can’t resolve. 
 
-To revolve Signal noise on your Can H & L wires be sure to use twisted pair shielded cables & move them away from any high voltage & high current cables. Also try some ferrite chokes, one at each end of the cable, they might help you. 
+To resolve signal noise on your Can H & L wires be sure to use twisted pair shielded cables & move them away from any high voltage & high current cables. Also try some ferrite chokes, one at each end of the cable, they might help you. 
 Ensure all cable connections & plugs are good & not loose or intermittent. This is the prime cause for Canbus drop outs!!
+
+
+I hope this guide has helped you cure any Canbus woes you might be having. If you feel it was valueable information please conisder supporting my efforts. Don't forget if you like & use this project you can buy me a beer/coffee to say thanks. https://ko-fi.com/3dprintdemon
+
+[<img width="171" alt="kofi_s_tag_dark" src="https://github.com/user-attachments/assets/3b8ae7e8-2130-4b90-8650-941f938ca196">](https://ko-fi.com/3dprintdemon)
+
+
+
 
