@@ -52,7 +52,7 @@ Now create the firmware & directly flash via DFU mode.
 ```
 make flash FLASH_DEVICE=0483:df11
 ```
-*change Serial ID for correct one for your node!
+*change the device ID for correct one for your node!
 
 ###### NOTE: Its safe to ignore any `failed to flash` warnings from the dfu-util as long as the terminal says `File downloaded successfully` above it.
 
