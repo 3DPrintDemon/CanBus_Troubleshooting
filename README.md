@@ -17,24 +17,6 @@ TO FLASH KATAPULT BACK AFTERWARDS YOU WILL NEED TO MANUALLY PUT THE NODE INTO DF
 DO NOT DO THIS IF YOU THINK YOU WILL NOT BE ABLE TO GET KATAPULT BACK - Jump down to the next section!
 
 
-Be sure you have created this file on your Pi
-```
- sudo nano /etc/network/interfaces.d/can0
-```
-It should contain these lines...
-```
- allow-hotplug can0
- iface can0 can static
-   bitrate 1000000
-   up ifconfig $IFACE txqueuelen 1024
-```
-
-Exit & Save
-
-Reboot the pi if you made any changes/corrections.
-
-
-
 Connect your Canbus node in DFU mode - see node's manual for this step!
 
 log in to your SSH terminal....
@@ -68,19 +50,49 @@ make flash FLASH_DEVICE=0483:df11
 Now safely disconnect the newly flashed node from the USB cable & remove any power over USB jumpers!!
 
 ************************************************
+# Check your can0 network
+Be sure you have created this file on your Pi
+```
+ sudo nano /etc/network/interfaces.d/can0
+```
+It should contain these lines...
+```
+ allow-hotplug can0
+ iface can0 can static
+   bitrate 1000000
+   up ifconfig $IFACE txqueuelen 1024
+```
+
+Exit & Save
+
+Reboot the pi if you made any changes/corrections.
+
+See if the network is `Up` by entering:
+
+```
+ip a
+```
+It will return a few lines of text with can0 at the very bottom, look for `state UP` for a working network
+
+
+![Can UP](https://github.com/user-attachments/assets/302eb5ca-4cf5-46d9-9d04-baf0081da9b4)
+
+
 
 # Check Canbus network for unassigned UUID’s
 
 Have only 1 unassigned node connected at once or it could cause a “Bus-off” state & the nodes will need to be reset (power cycled)
+
+Paste in this command:
 ```
 ~/klippy-env/bin/python ~/klipper/scripts/canbus_query.py can0
 ```
 
-If any unassigned UUID's are found the terminal will report:
+If any unassigned UUID's are found the terminal will report something similar to this example:
 
 `Found canbus_uuid=3754cb7564f3, Application: Klipper`
 
-Copy the UUID to MCU section into the selected .cfg file for the printer to use.
+Copy the UUID shown in YOUR termninal to the correct MCU section in the selected .cfg file for the printer to use.
 
 
 
@@ -106,17 +118,19 @@ The network should now work - in theory!
 # How tell which of your Canbus nodes are not functional & are keeping the network `Down`.
 
 
-Your system is set up correctly but your Can network not working, you keep getting can’t connect to MCU’s errors or have communication timeouts during homing….
+Your system seems to be set up correctly but your Can network not working, you keep getting can’t connect to MCU’s errors or have communication timeouts during homing….
 
 `ERROR: “mcu.error: mcu 'EBBCan’: Unable to connect”`
 
 First thing to do is go to the m`Machine` Tab in `Mainsail` & download your Klippy Log
 
 Now search using `ctrl+F` or `CMD+F` on MacOS 
+
+Search for:
 ```
 Starting CAN connect
 ```
-Now use the back arrow to go all the way to the last entry in the file & work up from there. This is the return for the system trying to start the can0 network.
+Now use the back arrow to go all the way to the last entry in the file & work up from there. This is the return from the system as its trying to start the can0 network.
 
 You should see something like this, the lines below means the assigned node is active & connected
 ```
@@ -137,7 +151,7 @@ mcu 'EBBChamber': Wait for identify_response
 serialhdl.error: mcu 'EBBChamber': Serial connection closed
 mcu 'EBBChamber': Timeout on connect
 ```
-This can either be a psychical connection problem with the Canbus cables, or it’s a firmware related mismatch, or the MCU’s UUID in the .cfg file is incorrect.
+This is Klipper's way of telling you this node is the problem & why things are not working. It can either be a psychical connection problem with the Canbus cables, or it’s a firmware related mismatch, or the MCU’s UUID in the .cfg file is incorrect.
 ************************************************
 
 # ERROR: “Communication timeout during homing”
