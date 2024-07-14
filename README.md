@@ -88,11 +88,11 @@ Copy the UUID to MCU section into the selected .cfg file for the printer to use.
 
 This command can also be used as a diagnostic tool when the printer is showing a `unable to connect` error if you already have the node's UUID in the system but its not working & you get the red error screens.
 
-Comment out one UUID in your .cfg files at a time to unassign a node. If the node is correctly configured & has a good connection it will now appear in the `Found canbus_uuid` report statement by using the above command. If not it wont appear in the return & no unassigned nodes will be visable.
+Comment out one UUID in your .cfg files at a time to unassign a node. If the node is correctly configured & has a good connection it will now appear in the `Found canbus_uuid` report statement by using the above command. If not it wont appear in the return & no unassigned nodes will be visible.
 
 # Using a UUID
 
-Paste the UUID into the selscted MCU section of your .cfg file, making sure the name is what you want. Example below.
+Paste the UUID into the selected MCU section of your .cfg file, making sure the name is what you want. Example below.
 ```
 [mcu EBBCan]
 canbus_uuid: 3754cb7564f3
@@ -118,7 +118,7 @@ Starting CAN connect
 ```
 Now use the back arrow to go all the way to the last entry in the file & work up from there. This is the return for the system trying to start the can0 network.
 
-You should see somehting like this, the lines below means the assigned node is active & connected
+You should see something like this, the lines below means the assigned node is active & connected
 ```
 mcu 'mcu': Starting CAN connect
 Loaded MCU 'mcu’…..
