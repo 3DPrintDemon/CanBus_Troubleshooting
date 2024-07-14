@@ -151,7 +151,9 @@ mcu 'EBBChamber': Wait for identify_response
 serialhdl.error: mcu 'EBBChamber': Serial connection closed
 mcu 'EBBChamber': Timeout on connect
 ```
-This is Klipper's way of telling you this node is the problem & why things are not working. It can either be a psychical connection problem with the Canbus cables, or it’s a firmware related mismatch, or the MCU’s UUID in the .cfg file is incorrect.
+This is Klipper's way of telling you this node is the problem & why things are not working. 
+
+It can either be a psychical connection problem with the Canbus cables, or it’s a firmware related mismatch, or the MCU’s UUID in the .cfg file is incorrect. It can even be caused by too much signal noise on the network.
 ************************************************
 
 # ERROR: “Communication timeout during homing”
@@ -165,7 +167,7 @@ If your Can network is running & is at the recommended frequency but you get err
 
 
 
-If you have anything but 0 for “bytes_retransmit” &  “bytes_invalid” it could mean your Can network might have issues with signal noise &/or problems on the Pi or U2C adapter.
+If you have anything but 0 for “bytes_retransmit” &  “bytes_invalid” it could mean your Can network might have issues with signal noise or its connections &/or problems on the Pi or U2C adapter.
 
 You can check this & more info on SSH by using:
 ```
