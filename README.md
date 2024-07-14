@@ -53,7 +53,7 @@ Now create the firmware & directly flash via DFU mode.
 ```
 make flash FLASH_DEVICE=0483:df11
 ```
-*change the device ID for correct one for your node!
+*Your device ID will be different, make sure you use the correct one for your node!
 
 ###### NOTE: Its safe to ignore any `failed to flash` warnings from the dfu-util as long as the terminal says `File downloaded successfully` above it.
 
@@ -108,7 +108,7 @@ Copy the UUID shown in YOUR termninal to the correct MCU section in the selected
 
 ## Canbus TIP:
 
-This command can also be used as a diagnostic tool when the printer is showing a `unable to connect` error if you already have the node's UUID in the system but its not working & you get the red error screens.
+The command above can also be used as a diagnostic tool when the printer is showing a `unable to connect` error if you already have the node's UUID in the system but its not working & you get the red error screens.
 
 Comment out one UUID in your .cfg files at a time to unassign a node. If the node is correctly configured & has a good connection it will now appear in the `Found canbus_uuid` report statement by using the above command. If not it wont appear in the return & no unassigned nodes will be visible.
 
