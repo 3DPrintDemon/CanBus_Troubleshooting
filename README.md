@@ -132,7 +132,7 @@ Your system seems to be set up correctly but your Can network is not working, yo
 
 `ERROR: “mcu.error: mcu 'EBBCan’: Unable to connect”`
 
-First thing to do is go to the m`Machine` Tab in `Mainsail` & download your Klippy Log
+First thing to do is go to the `Machine` Tab in `Mainsail` & download your Klippy Log
 
 Now search using `ctrl+F` or `CMD+F` on MacOS 
 
